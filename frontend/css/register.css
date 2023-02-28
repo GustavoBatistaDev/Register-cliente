@@ -1,0 +1,418 @@
+
+/*configuracoes gerais*/
+
+body{
+    background-color: #E8F1F2 !important;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*configuracoes navbar*/
+nav{
+    position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+    top: 0;
+    height: 100px;
+    background-color: #010725;
+    width: 100%;
+}
+
+label.logo{
+    color: #E8F1F2;
+    font-size: 35px;
+    padding: 20px 20px;
+    font-weight: bold;
+    font-family: 'Kaushan Script', cursive;
+}
+
+label.logo:hover{
+    transition: 1s;
+    color: #341a82;
+    font-weight: bold;
+    margin-left: 0;
+    font-family: 'Kaushan Script', cursive;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px
+ 
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 35px 20px;
+    margin: 0 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    transition: 1s;
+
+   
+
+    
+}
+nav ul li a:hover{
+    text-decoration: none;
+    background-color: #341a82;
+    border-radius: 5px;
+    color: white;
+    
+}
+
+
+
+@media(max-width:860px) and (min-width:640px){
+
+    nav{
+        height: 92px !important;
+    }
+
+    nav ul li{
+        display: inline-block;
+        padding: 35px 2px;
+        margin: 0 5px;
+        text-transform: uppercase;
+        text-decoration: none;
+        
+    }
+    nav ul li a{
+        font-size: 12px;
+        text-decoration: none;
+        color: white;
+        transition: 1s;
+    
+       
+    
+        
+    }
+    nav ul li a:hover{
+        text-decoration: none;
+        background-color: #341a82;
+        border-radius: 5px;
+        color: white;
+        
+    }
+}
+
+@media(min-width:861px){
+    nav ul li{
+        display: inline-block;
+        padding: 35px 20px;
+        margin: 0 5px;
+        text-transform: uppercase;
+        text-decoration: none;
+        
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+        transition: 1s;
+    
+       
+    
+        
+    }
+    nav ul li a:hover{
+        text-decoration: none;
+        background-color: #341a82;
+        border-radius: 5px;
+        color: white;
+        
+    }
+}
+
+
+
+
+
+/*configuracoes navbar*/
+
+@media(max-width:639px){
+    label.logo{
+      display: flex;
+      justify-content: center;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    nav{
+        height: 92px;
+    }
+
+    nav ul{
+        float: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    nav ul li{
+        margin-top: 0;
+        padding-top: 0 ;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    nav ul li a{
+        font-size: 10px;
+        margin-top: 0px;
+        padding: 0;
+    }
+
+    
+}   
+
+
+
+    
+
+/* //configuracoes navbar*/
+
+
+/*configuracoes container conteudo*/
+
+.container-form{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+#button{
+    box-sizing: none;
+    
+}
+
+
+
+
+.container-formulario{
+    padding-top: 30px ;
+    display: flex;
+    justify-content: center;
+
+}
+.container-formulario-1{
+    padding: 10px;
+
+}
+.container-formulario-2{
+    padding: 10px;
+    
+}
+
+
+
+
+.form-input-submit{
+    display: block;
+    margin-top: 1rem;
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #010725;
+    border: none;
+    outline: none;
+    color: #f8ecda;
+
+
+}
+
+/*media q*/
+@media(min-width: 280px) and (max-width: 509px){
+    .container-formulario{
+        padding-top: 30px ;
+        display: grid;
+        justify-content: center;
+
+    }
+    .form-input{
+        display: inline;
+        width: 170px;
+        outline: none;
+        border: none;
+        background-color: #E8F1F2;
+    }
+    .button-icon{
+        border: none;
+        background-color: #E8F1F2  ;
+        margin-right: 9px;
+        
+    }
+    .estilizar{
+        border: 2px solid #010725;
+        border-radius: 5px;
+        padding: 3px;
+        margin: 10px;
+        width: 220px;
+    }
+
+    #photo{
+        padding-left: 9px;
+    }
+    .estilizarr{
+        padding-left: 0;
+        border-radius: 6px ;
+        width: 220px;
+    }
+    
+
+
+
+}
+
+
+
+
+@media(min-width: 510px) and (max-width: 679px){
+    .form-input{
+        display: inline;
+        width: 170px;
+        outline: none;
+        border: none;
+        background-color: #E8F1F2;
+    }
+    .button-icon{
+        border: none;
+        background-color: #E8F1F2 ;
+        margin-right: 9px;
+        
+    }
+    .estilizar{
+        border: 2px solid #010725;
+        border-radius: 5px;
+        padding: 3px;
+        margin: 10px;
+        width: 220px;
+    }
+ 
+    .estilizarr{
+        padding-left: 0;
+        border-radius: 6px ;
+        width: 220px;
+    }
+    
+
+
+}
+
+
+
+
+@media(min-width: 680px) and (max-width: 900px){
+    .form-input{
+        display: inline;
+        width: 230px;
+        outline: none;
+        border: none;
+        background-color: #E8F1F2 ;
+    }
+    .button-icon{
+        border: none;
+        background-color: #E8F1F2  ;
+        margin-right: 9px;
+        
+    }
+    .estilizar{
+        border: 2px solid #010725;
+        border-radius: 5px;
+        padding: 3px;
+        margin: 10px;
+        width: 270px;
+    }
+    #photo{
+        padding-left: 9px;
+    }
+    .estilizarr{
+        padding-left: 0;
+        border-radius: 6px ;
+        width: 270px;
+    }
+    
+    
+
+}
+
+@media(min-width: 900px){
+    .form-input{
+        display: inline;
+        width: 280px;
+        outline: none;
+        border: none;
+        background-color: #E8F1F2;
+    }
+    .button-icon{
+        border: none;
+        background-color: #E8F1F2 ;
+        margin-right: 9px;
+        
+    }
+    .estilizar{
+        border: 2px solid #010725;
+        border-radius: 5px;
+        padding: 3px;
+        margin: 10px;
+        width: 330px;
+    }
+    #photo{
+        padding-left: 9px;
+    }
+    .estilizarr{
+        padding-left: 0;
+        border-radius: 6px ;
+        width: 332px;
+    }
+    
+    
+    
+
+}
+
+/* footer*/
+
+.ul-footer{
+    display: flex;
+    justify-content: center;
+
+}
+
+.item-footer{
+    margin-left: 3%;
+    margin-right: 3%;
+    
+}
+
+.item-link{
+    color: #f8ecda;
+}
+
+.item-link:hover{
+    color: #a49c8f;
+}
+
+/*/footer*/
+
+
+
+.fixarRodape {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* //media q*/
+

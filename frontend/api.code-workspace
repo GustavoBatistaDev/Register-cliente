@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "api",
+			"path": "."
+		},
+		{
+			"name": "Web Font",
+			"path": "../../Downloads/cera-round-pro-free-font/Demo_fonts/Web Font"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "api",
+		"liveServer.settings.port": 5501
+	}
+}
