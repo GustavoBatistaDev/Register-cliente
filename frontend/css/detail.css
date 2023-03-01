@@ -374,151 +374,22 @@ nav ul li a:hover{
 }
 /*//search media*/
 
+
+ #card-img{
+    border-radius: 25px;
+ }
+
 #Card{
-    background-color: #E8F1F2 !important;
-    margin-bottom: 90px;
+    width: 25rem !important;
+    height: 27rem;
+    padding: 10px;
+    border-radius: 25px;
 }
 
-@media(max-width:991px) and (min-width: 768px){
-    #Card{
-        height: 44rem !important;
-    }
-
+#card-address{
+    width: 30rem !important;
+    height: 21rem;
+    padding: 10px;
+    border-radius: 25px;
 }
 
-@media(max-width:767px) and (min-width: 578px){
-    #Card{
-        height: 41rem !important;
-    }
-
-}
-
-@media(max-width:577px) and (min-width: 540px){
-    #Card{
-        height: 38rem !important;
-        
-    }
-    
-    #foguetinho{
-        display: none;
-    }
-
-
-}
-
- 
-@media(max-width:539px) and (min-width: 521px){
-
-
-    #Card{
-        height: 37rem !important;
-   
-    }
-
-
-    #foguetinho{
-        display: none;
-    }
-
-    .info{
-        font-size: 1rem;
-    }
-
-}
-
-
-
- 
-@media(max-width:520px) and (min-width: 490px){
-
-
-    #Card{
-        height: 34rem !important;
-        margin: 25px;
-   
-    }
-
-    #foguetinho{
-        display: none;
-    }
-
-    .info{
-        font-size: 0.9rem;
-    }
-
-    .title-card{
-        font-size: 1.5rem;
-    }
-
-    .card-img{
-        height: 200px;
-    }
-
-}
-
- 
-@media(max-width:489px) and (min-width: 439px){
-
-
-    #Card{
-        height: 32.5rem !important;
-           
-    }
-
-    #foguetinho{
-        display: none;
-    }
-
-    .info{
-        font-size: 0.8rem;
-    }
-
-    .title-card{
-        font-size: 1.4em;
-    }
-
-    .card-img{
-
-        height: 60px !important;
-    }
-
-}
-
-@media(max-width:438px) and (min-width: 400px){
-
-
-    #Card{
-        height: 32.5rem !important;
-        margin: px;
-   
-    }
-
-    #foguetinho{
-        display: none;
-    }
-
-    .info{
-        font-size: 0.8rem;
-    }
-
-    .title-card{
-        font-size: 1.1em;
-    }
-
-    .card-img{
-
-        width: 20px !important;
-    }
-
-}
-
- 
-
- 
-
-
- 
- 
-
-
- 
