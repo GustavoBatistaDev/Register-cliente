@@ -10,7 +10,7 @@ from rest_framework.pagination import PageNumberPagination
 
 
 class Pagination(PageNumberPagination):
-    page_size = 2
+    page_size = 9
 
 class CLientListCreateApi(ListCreateAPIView):
     queryset = Client.objects.all().order_by('-id')

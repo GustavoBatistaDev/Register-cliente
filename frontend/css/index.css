@@ -223,18 +223,20 @@ nav ul li a:hover{
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     margin-left: 20px;
+    margin-top: -17px;
     
 }
 
 .title-card p{
-    color: #bfa98b;
-    font-family: cera;
-    font-weight: 700;
+color: #bfa98b;
+font-weight: 700;
 
-    
+
 }
 
 #card-link{
+    margin-left: 12px;
+    width: 120px;
     border: solid 2px #341a82;
     padding: 12px;
     color: #341a82;
@@ -247,9 +249,10 @@ nav ul li a:hover{
 }
 
 #card-link:hover{
+    cursor: pointer;
     background-color: #341a82;
+    color: white;
     padding: 12px;
-    color: #ffffff;
     border-radius: 13px;
     text-decoration: none;
     font-size: 1.1rem;
@@ -257,7 +260,11 @@ nav ul li a:hover{
 }
 
 
-
+@media(min-width:900px){
+    .cardimg{
+        height: 255px;
+    }
+}
 
 
 

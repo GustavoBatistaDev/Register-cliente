@@ -5,9 +5,6 @@ $.ajax({
     success: function(response){
 
         let container = document.getElementById('content')
-
-      
-
         for(let i in response["results"]){
 
             let divCardContainer = document.createElement('div')
@@ -18,8 +15,8 @@ $.ajax({
             container.appendChild(divCardContainer)
             
             let cardImg = document.createElement('img')
-            cardImg.style = "border-radius: 25px; height: 255px ; width: 335px; "
-            cardImg.className = "card-img-top"
+            cardImg.style = "border-radius: 25px; "
+            cardImg.className = "card-img-top cardimg"
             cardImg.src = response['results'][i]['photo']
 
 
@@ -46,15 +43,17 @@ $.ajax({
 
             let a = document.createElement('a')
             a.id = "card-link"
-            a.style = "border: solid 2px #341a82; padding: 12px;color: #341a82;border-radius: 13px;text-decoration: none;font-size: 1.1rem;transition: 0.5s;"
-
+           
+            a.addEventListener('click', get_client) 
             a.innerHTML = 'View more'
             divCardContainer.append(a)
-        }
 
-        
-        
-     
-    
+            function get_client(){
+                location.href = `detail.html?q=${response['results'][i]['id']}`
+            }
+            
+        }
     }
 })
+
+
