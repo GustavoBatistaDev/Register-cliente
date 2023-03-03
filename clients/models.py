@@ -5,7 +5,7 @@ class Client(models.Model):
     name = models.CharField(max_length=150)
     date_of_birth = models.DateField()
     photo = models.ImageField(upload_to='img_clients')
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateField(auto_now_add=True)
     city = models.CharField(max_length=150)
     neightborhood = models.CharField(max_length=150)
     public_place = models.CharField(max_length=150) 

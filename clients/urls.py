@@ -3,8 +3,7 @@ from . import api
 
 
 urlpatterns = [
-    path('home/clients/api/', api.home, name='home'),
-    path('home/clients/api/<int:id>/', api.detail, name='detail'),
-
+    path('home/clients/api/', api.CLientListCreateApi.as_view(), name='home'),
+    path('home/clients/api/<int:pk>/', api.ClientDetailDeleteUpdate.as_view(), name='detail'),
 
 ]
