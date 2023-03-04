@@ -3,6 +3,7 @@ from django.db import models
 
 class Client(models.Model):
     name = models.CharField(max_length=150)
+    last_name = models.CharField(max_length=150)
     date_of_birth = models.DateField()
     photo = models.ImageField(upload_to='img_clients')
     created_at = models.DateField(auto_now_add=True)
