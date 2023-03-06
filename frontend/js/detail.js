@@ -1,4 +1,16 @@
 
+function ClientDelete(){
+    let url = document.getElementById('confirm')
+    url = url.getAttribute('href')  
+
+    fetch(url, {
+    method: 'DELETE',
+   
+})
+.then(response => response.json())
+    location.href = 'http://127.0.0.1:5501/frontend/index.html'
+}
+
 
 let urlParams = new URLSearchParams(window.location.search)
 let id = urlParams.get("q")
@@ -10,7 +22,6 @@ $.ajax({
     async: false,
     
     success: function(response){
-        console.log(response)
         let container = document.querySelector('#content');
         
 
@@ -71,9 +82,18 @@ $.ajax({
         aDelete.innerHTML = 'Delete'
         aDelete.setAttribute('data-toggle', 'modal')
         aDelete.setAttribute('data-target', '#exampleModal')
-        
         divCardBody.appendChild(aDelete)
 
+
+
+        let confirm = document.getElementById('confirm')
+
+        confirm.setAttribute('href', `http://127.0.0.1:8000/home/clients/api/${id}/`)
+        confirm.setAttribute('onclick', 'ClientDelete()')
+        let buttonNoConfirm = document.querySelector('#no-confirm')
+        buttonNoConfirm.setAttribute('href', `http://127.0.0.1:5501/frontend/detail.html?q=${response['id']}`)
+
+   
         
 
 
@@ -163,30 +183,7 @@ $.ajax({
         div5.appendChild(p8)
         p8.innerHTML = `Number: ${response['number']}`
 
-
-        
-
-
-/*
-
-<button type="button" class="btn btn-primary" >
-  Launch demo modal
-</button>
-*/
-
-
-
-
-
-
-
-        
-
-        
-
-        
-
-
+           
 
         
     }
@@ -194,28 +191,3 @@ $.ajax({
 })
 
 
-
-/*
-    <div id="card-address" class="card ml-2  sm-2 md-3 lg-4  mr-2" >
-              <div class="card-body">
-                <h3 class="card-title title-card">Address</h3>
-                <hr>
-                <div class="m-3 ">
-                  <img  style="float: right;" id="foguetinho" width="120px" src="img/44247e29bf035ece825b8b2bf8af88c2-ilustracao-de-foguete-ilustracao-de-foguete.png" alt="">
-                </div>
-
-                <div class="m-3">
-                  <p class="card-text info"><strong>Neighborhood: Vale Verde</strong></p>
-                  <p class="card-text info"><strong>Public Place: Av.Tordesilhas</strong></p>
-                  <p class="card-text info"><strong>First Name: Vale Verde</strong></p>
-                </div>
-                <div class="m-3 ">
-                    <p class="card-text info"><strong>Last Name: Av.Tordesilhas</strong></p>
-                    <p class="card-text info"><strong>Neighborhood: Vale Verde</strong></p>
-                    <p class="card-text info"><strong>Cep: 45803-178</strong></p>
-
-                </div>
-                </div>    
-              </div>
-
-*/
