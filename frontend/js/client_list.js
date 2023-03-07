@@ -14,10 +14,9 @@ async function Clientlist(){
     let urlParams = new URLSearchParams(window.location.search)
     let queryString = urlParams.get("q")
 
-    if(typeof queryString === 'null' ){
-        console.log('sou null')
+    if( ! queryString){
+        queryString = ''
     }
-    
  
     
     url = url + queryString
