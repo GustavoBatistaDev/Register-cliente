@@ -43,19 +43,22 @@
         <h3 style="width: 100%;" class="d-flex justify-content-center pt-5">Register Costumer</h3>
        
 
-        <form class="container-formulario" method="POST" action="" enctype="multipart/form-data">
+        <form id="form" class="container-formulario" method="POST" action="" enctype="multipart/form-data">
 
           
             <div class="container-formulario-1">
              
               <div class="estilizar">
-                <button class="button-icon"><i class="fa-solid fa-user"></i></button><input placeholder="Enter your first name..."  class="form-input" name="first_name" type="text"><br>
+                <button class="button-icon"><i class="fa-solid fa-user"></i></button><input placeholder="Enter your first name..."  class="form-input" name="name" type="text"><br>
               </div>
               <div class="estilizar">
                 <button class="button-icon"><i class="fa-solid fa-user"></i></button><input placeholder="Enter your last name..."  class="form-input"  name="last_name"type="text"><br>
               </div>
               <div class="estilizar">
-                <button class="button-icon"><i class="fa-solid fa-envelope"></i></button><input placeholder="Enter your cep..."  class="form-input" name="cep"type="text"><br>
+                <button class="button-icon"><i class="fa-solid fa-envelope"></i></button><input placeholder="Enter your cep..."  class="form-input" name="zip_code"type="text"><br>
+              </div>
+              <div class="estilizar">
+                <button class="button-icon"><i class="fa-solid fa-tree-city"></i></button><input placeholder="Enter your city..."  class="form-input" name="city"type="text"><br>
               </div>
               <img style="display: block; margin-left: 45px;" width="200px" src="img/ae0fc81df564354bb6b22d3b4fca7e85-astronauta-segurando-bandeira-desenho-animado.png" alt="">
 
@@ -74,6 +77,9 @@
               </div>
               <div class="estilizar">
                 <button class="button-icon"><i class="fa-regular fa-list-ol"></i></button><input placeholder="Enter the number" name="number" class="form-input" type="text"><br>
+              </div>
+              <div class="estilizar">
+                <button class="button-icon"><i class="fa-solid fa-calendar-days"></i></button><input placeholder="Enter your date of birth..."  class="form-input" name="date_of_birth"type="text"><br>
               </div>
 
               <img width="200px" src="img/506b575739e90613428cdb399175e2c8-desenho-de-astronauta-espacial.png" alt="">
@@ -118,7 +124,8 @@
 
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="js/register.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
