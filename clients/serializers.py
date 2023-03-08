@@ -6,14 +6,14 @@ from .utils.validation_data import validation
 class ClientSerializer(serializers.ModelSerializer):
     class Meta:
         model = Client
-        fields = ['id','photo' , 'name', 'date_of_birth', 'created_at', 'city', 'neightborhood',
+        fields = ['id','photo' , 'last_name', 'name', 'date_of_birth', 'created_at', 'city', 'neightborhood',
                   'public_place', 'zip_code', 'number']
 
     created_at = serializers.CharField(
         max_length=150,
         read_only=True
         )
-    photo = serializers.ImageField(read_only=True)
+    
     
 
     def validate_name(self, value):

@@ -13,7 +13,7 @@
 
 body{
     background-image: url("https://i.pinimg.com/originals/ac/4b/b0/ac4bb051d77293e587be3733bb587543.jpg");
-
+    height: 125vh;
 }   
 
 
@@ -413,6 +413,20 @@ font-weight: 700;
 
 /* footer*/
 
+
+
+#margin{
+    margin-top: 250px;
+}
+
+.fixarRodape {
+
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
 .ul-footer{
     display: flex;
     justify-content: center;
@@ -451,7 +465,7 @@ font-weight: 700;
 
 .input-search-main{
     background: transparent;
-    width: 200px;
+    width: 370px;
     outline: none;
     border: none;
     

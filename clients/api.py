@@ -25,7 +25,9 @@ class CLientListCreateApi(ListCreateAPIView):
 
         if q is not None:
             query = Q(
-                Q(name__icontains=q) | Q(city__icontains=q)
+                Q(name__icontains=q) | Q(city__icontains=q) |
+                Q(last_name__icontains=q) | Q(neightborhood__icontains=q)|
+                Q(public_place__icontains=q)
             )
             qs = qs.filter(query)
             

@@ -8,7 +8,7 @@ async function Clientlist(){
         let queryString = document.getElementById('search_id').value
 
         location.href = `index.html?q=${queryString}`
-        
+   
     })
 
     let urlParams = new URLSearchParams(window.location.search)
@@ -18,7 +18,8 @@ async function Clientlist(){
         queryString = ''
     }
  
-    
+    let input_search = document.getElementById('search_id')
+    input_search.value = queryString
     url = url + queryString
     console.log(url)
     const response = await fetch(url)

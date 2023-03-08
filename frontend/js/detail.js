@@ -183,6 +183,13 @@ $.ajax({
         div5.appendChild(p8)
         p8.innerHTML = `Number: ${response['number']}`
 
+        let p9 = document.createElement('p')
+        p9.className = 'card-text info'
+
+        div5.appendChild(p9)
+        p9.innerHTML = `City: ${response['city']}`
+
+
            
 
         
