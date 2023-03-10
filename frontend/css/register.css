@@ -20,6 +20,14 @@ nav{
     width: 100%;
 }
 
+.render-error{
+
+    padding: 0;
+    margin-left: 20px;
+    color: red;
+    margin: 0;
+}
+
 label.logo{
     color: #E8F1F2;
     font-size: 35px;
@@ -362,7 +370,7 @@ nav ul li a:hover{
         border: 2px solid #010725;
         border-radius: 5px;
         padding: 3px;
-        margin: 10px;
+        margin-top: 10px;
         width: 330px;
     }
     #photo{
@@ -372,6 +380,7 @@ nav ul li a:hover{
         padding-left: 0;
         border-radius: 6px ;
         width: 332px;
+        margin-top: 10px;
     }
     
     

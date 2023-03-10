@@ -67,13 +67,22 @@ $.ajax({
         divData.appendChild(p1)
         divData.appendChild(p2)
 
+
+        let button = document.createElement('button')
+        button.id = 'button-edit'
+        button.style = 'margin: 0; padding:0; border: none;'
+        button.setAttribute('href', `http://127.0.0.1:8000/home/clients/api/${response['id']}`)
+
+        divCardBody.appendChild(button)
         let a = document.createElement('a')
         a.id = 'card-link'
+        a.href = `http://127.0.0.1:5501/frontend/register.html?cl=${response['id']}`
+        a.className = 'edit-client'
         
         a.innerHTML = 'Edit'
         
         
-        divCardBody.appendChild(a)
+        button.appendChild(a)
 
         let aDelete = document.createElement('a')
         aDelete.id = 'card-link-remove'
@@ -92,6 +101,8 @@ $.ajax({
         confirm.setAttribute('onclick', 'ClientDelete()')
         let buttonNoConfirm = document.querySelector('#no-confirm')
         buttonNoConfirm.setAttribute('href', `http://127.0.0.1:5501/frontend/detail.html?q=${response['id']}`)
+
+       
 
    
         

@@ -21,7 +21,6 @@ async function Clientlist(){
     let input_search = document.getElementById('search_id')
     input_search.value = queryString
     url = url + queryString
-    console.log(url)
     const response = await fetch(url)
 
     const data = await response.json();
