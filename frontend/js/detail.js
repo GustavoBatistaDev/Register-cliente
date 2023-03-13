@@ -8,12 +8,19 @@ function ClientDelete(){
    
 })
 .then(response => response.json())
+  
+
+   
+    let container = document.getElementById('container-message')
+    console.log(container)
     location.href = 'http://127.0.0.1:5501/frontend/index.html'
+    console.log(container)
 }
 
 
 let urlParams = new URLSearchParams(window.location.search)
 let id = urlParams.get("q")
+
 
 $.ajax({
     

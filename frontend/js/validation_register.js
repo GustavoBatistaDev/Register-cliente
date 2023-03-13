@@ -9,7 +9,7 @@ function authRegister(){
     let neightborhood = document.getElementById('neightborhood').value
     let number = document.getElementById('number').value
     let date_of_birth = document.getElementById('date_of_birth').value
-    //let file = document.getElementById('photo').value
+    let file = document.getElementById('photo').value
 
     //box error
     let name_error = document.getElementById('name_error')
@@ -85,7 +85,17 @@ function authRegister(){
         return false
     }
  
-
+    if(!file.trim()){
+        file_error.innerHTML = 'The field is required.'
+        ExecTimeout()
+        return false
+    }
+    if(!file.trim()){
+        file_error.innerHTML = 'The field is required.'
+        ExecTimeout()
+        return false
+    }
+ 
 
     return true
 

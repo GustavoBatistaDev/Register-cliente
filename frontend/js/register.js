@@ -17,8 +17,8 @@ if(!id){
                 body: form_data
         }
 
-        //fetch(url, data)
-       // location.href = 'http://127.0.0.1:5501/frontend/index.html'
+        fetch(url, data)
+        location.href = 'http://127.0.0.1:5501/frontend/index.html'
            
     }
     
@@ -33,6 +33,9 @@ if(!id){
 
 }else{
 
+    let title = document.getElementById('main-title')
+    title.innerHTML = 'Edit customer'
+
 
     getDataClient()
 
@@ -41,19 +44,29 @@ if(!id){
 
     let dataIscorrectEdit =  authRegister()
 
+    let formDataUpdate = new FormData(e.target)
+
+    let photo = formDataUpdate.get('photo')['name']
+    if(!photo){
+        formDataUpdate.delete('photo')
+        dataIscorrectEdit = true
+        let file_error = document.getElementById('file_error')
+        file_error.innerHTML = null
+    }
+
     if(dataIscorrectEdit){
 
         const url = `http://127.0.0.1:8000/home/clients/api/${id}/`
-        let formDataUpdate = new FormData(e.target)
+       
         
         let data = {
             method: 'PATCH',
-            body: form_data
+            body: formDataUpdate
 
     }
         let response = fetch(url, data)
 
-
+        location.href = 'http://127.0.0.1:5501/frontend/index.html'
 
     }
 
